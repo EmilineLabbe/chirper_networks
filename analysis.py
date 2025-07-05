@@ -221,6 +221,7 @@ def plot_powerlaw(action_type):
     )
         #plot
         fig.show()
+        return fig
 
 
 def plot_comparative_degree_plotly(degree_data):
@@ -275,6 +276,7 @@ def plot_comparative_degree_plotly(degree_data):
         showlegend=True
     )
     fig.show()
+    return fig
 
 
 def plot_interaction_feature_correlation(interaction_paths=interaction_paths):
@@ -322,3 +324,4 @@ def plot_interaction_feature_correlation(interaction_paths=interaction_paths):
     )
 
     fig.show()
+    return fig
