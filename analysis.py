@@ -208,7 +208,7 @@ def plot_powerlaw(action_type):
                             col=i, 
                             dtick=1)
                 
-            fig.update_yaxes(title_text="Frequency", 
+            fig.update_yaxes(title_text="Frequency" if i == 1 else "", 
                             type='log', 
                             row=1, 
                             col=i, 
@@ -268,7 +268,7 @@ def plot_comparative_degree_plotly(degree_data):
             )
 
         fig.update_xaxes(title_text="Degree", type='log', dtick=1, row=1, col=col)
-        fig.update_yaxes(title_text="Frequency", type='log', dtick=1, row=1, col=col)
+        fig.update_yaxes(title_text="Frequency" if col == 1 else "", type='log', dtick=1, row=1, col=col)
 
     fig.update_layout(
         title_text="Degree Distributions (log–log) Across Interaction Types",
