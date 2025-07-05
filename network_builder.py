@@ -3,7 +3,7 @@
 functions for sampling code
 
 author: emi labbe
-last update: july 3 2025
+last update: july 5 2025
 """
 import os
 import pandas as pd
