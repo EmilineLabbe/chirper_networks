@@ -216,7 +216,7 @@ def plot_powerlaw(action_type):
         title_text=f"{action_type.title()} Degree Distributions (log–log)",
         template='plotly_white',
         height=400,
-        width=1000,
+        width=1100,
         showlegend=False
     )
         #plot
