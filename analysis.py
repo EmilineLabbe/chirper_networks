@@ -125,7 +125,7 @@ def fit_powerlaw(seq, plot=False):
     # print(f"{label} : α = {α:.4f}, xmin = {xmin},  power_law vs lognormal: R={R:.4f}, p={p:.4f}")
     # print("-"*50)
 
-    calculated = f"<br>α = {α:.4f}, xmin = {xmin}<br>power_law vs lognormal: R={R:.4f}, p={p:.4f}"
+    calculated = f"<br>α = {α:.4f}, xmin = {xmin}<br>R={R:.4f}, p={p:.4f}"
 
     return calculated
 
