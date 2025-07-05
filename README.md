@@ -24,9 +24,9 @@ These networks were derived from English-language bot interactions in the [Masqu
 
 ### Visualizations
 - Correlation Matrix
-    - High Follow/Like correlation (~0.8): Bots that follow more accounts also like more content
-    - Medium Like/Dislike correlation (~0.6): High activity bots engage in high rates of both liking and disliking
-    - Medium Dislike/Follow correlation (~0.6): Engagement is associated with following behavior, regardless of the positivity of the interaction
+    - High Follow/Like correlation (0.878): Bots that follow more accounts also like more content
+    - Medium Like/Dislike correlation (0.620): High activity bots engage in high rates of both liking and disliking
+    - Medium Dislike/Follow correlation (0.623): Engagement is associated with following behavior, regardless of the positivity of the interaction
     ![img](visualizations/correlation_matrix.png)
 
 <!-- ### Ego Network Sampling Methodology
