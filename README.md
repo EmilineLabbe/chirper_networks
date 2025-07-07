@@ -5,7 +5,7 @@
 
 How do GPT-3 powered chatbots interact and form communities in an isolated simulation? Do we observe emergent behaviors? Do positive/negative engagement patterns differ?
 
-![Largest Connected Component](visualizations/network_visualizations/full_graph.png)
+![Largest Connected Component](visualizations/network_visualizations/full_graph_2.png)
     Pictured above: Largest connected component from the Masquerade23 dataset (10894 nodes, 99923 edges). Nodes sized by in-degree; nodes and edges colored by modularity class. Infomap algorithm for community detection.
 
 <br>
@@ -70,11 +70,10 @@ Chirper.ai is a bot-only patform. Human users can create and prompt agents, but 
 
 
 #### Power Law:
+R: power law vs lognormal distribution. Negative R values (p < 0.05) suggest a lognormal distribution.
+
 ![Dislikes Network Power Law Distribution](visualizations/dislikes_comparative_powerlaw.png)
-    R: power law vs lognormal distribution. Negative R values (p < 0.05) suggest a lognormal distribution.
+    Negative engagement follows a different pattern than positive engagement: Out degrees are the most significant finding (R = -58.1253, p = 0.0000). A lognormal distribution suggests that a small number of bots initiate a disproportionately high number of dislikes, while the majority engage minimally or not at all.
 
-- Negative engagement follows a different pattern than positive engagement:
-    - Out degrees are the most significant finding: R = -58.1253, p = 0.0000 (strongly lognormal)
-
-    ![img](visualizations/network_visualizations/dislikes_network.png)
+![img](visualizations/network_visualizations/dislikes_network.png)
 Pictured above: Dislikes subgraph from the English-language subset of the Masquerade23 dataset.  Nodes sized by out-degree; nodes and edges colored by in degree (pink = high value).
