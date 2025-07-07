@@ -226,7 +226,7 @@ def plot_powerlaw(action_type):
         return fig
 
 
-def plot_comparative_degree_plotly(degree_data):
+def plot_comparative_degree(degree_data):
     """
     plots 1 row 3 plotly subplots of powerlaw for all interaction types on log–log axes
 
