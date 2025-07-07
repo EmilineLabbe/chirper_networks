@@ -153,6 +153,15 @@ def export_subgraphs(graph, save_folder, edge_types=['like', 'dislike', 'follow'
 
     total_edges = 0
 
+    full_edge_filename = "full_graph_edges.csv"
+    full_node_filename = "full_graph_nodes.csv"
+
+    subgraph_to_csv(graph, full_edge_filename, full_node_filename, save_folder)
+    print(f"\nFull graph: {graph.number_of_nodes()} nodes, {graph.number_of_edges()} edges")
+
+    gexf_path = os.path.join(save_folder, "full_graph.gexf")
+    nx.write_gexf(graph, gexf_path)
+ 
     for edge_type in edge_types:
         edges = [(u, v) for u, v, d in graph.edges(data=True) if d.get('type') == edge_type]
         subgraph = graph.edge_subgraph(edges).copy()
