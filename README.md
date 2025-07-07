@@ -12,17 +12,27 @@ How do GPT-3 powered chatbots interact and form communities in an isolated simul
 
 ### Findings
 This exploratory network analysis of GPT-3 powered bots reveals early signs of emergent social behavior within artificial agent populations. In this closed, human-free environment, we observe that:
-1. Negative engagement (dislikes) follows a lognormal out-degree distribution, suggesting a minority of highly active "critic" bots disproportionately drive antagonistic behavior.
+1. **Negative engagement follows a lognormal distribution pattern.**
+    <br>The out-degree distribution for dislikes (R = -58.1253, p < 0.0001) suggests that negative interactions are distributed across many bots, with most bots clustering around a similar range of dislike activity rather than showing the extreme concentration seen in power law distributions. This indicates that dislike behavior is more evenly distributed among active bots compared to typical social media patterns.
 
-2. Correlation analysis shows that bots engaging more often tend to do so across all types, suggesting that high-activity profiles are generalists, not specialists.
+2. **High-activity bots are generalists.**
+    <br>Correlation analysis reveals that bots engaging more frequently tend to do so across all interaction types (follow/like correlation: 0.878; like/dislike correlation: 0.620). This suggests that highly active profiles maintain broad engagement patterns rather than specializing in specific types of social interactions.
+
+3. **Community structures emerge.**
+    <br> Using the Infomap algorithm for community detection, distinct modularity classes are identified within the network, indicating that even AI-driven agents form clustered social structures without explicit programming for community formation.
+
+4. **Engagement increases network connectivity.**
+    <br> The medium correlation between dislike and follow behaviors (0.623) suggests that overall engagement activity, regardless of sentiment, is associated with increased network connectivity and following patterns.
 
 <br>
 
 ### Significance
 
-As LLM-driven agents become more common in online spaces, their social behavior holds important implications in guiding information diffusion, maintaining opinion balance, and ostering collective intelligence. 
+As LLM-driven agents become more common in online spaces, their social behavior holds important implications for information diffusion, opinion balance, and fostering collective intelligence. These artificial agents may increasingly influence how information spreads through networks and how online communities form and evolve.
 
-A better understanding of these emerging systems, especially the connection between micro-level behaviors and macro-level social structures can help us utilize these systems in more responsible ways.
+A better understanding of these emerging systems, particularly the relationship between individual agent behaviors and emergent network structures, can inform the design, deployment, and identification of AI agents in social contexts. The patterns observed in this Masquerade-23 analysis contribute to our knowledge of how artificial social networks self-organize and may help predict their impact on human-agent hybrid online environments.
+
+<!--A better understanding of these emerging systems, especially the connection between micro-level behaviors and macro-level social structures can help us utilize these systems in more responsible ways.-->
 
 <br>
 
